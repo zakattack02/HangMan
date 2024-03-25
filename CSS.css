@@ -1,0 +1,194 @@
+/* CSS Styles */
+html{
+  font-family: 'Bubblegum Sans';
+}
+
+body {
+ /* background: rgb(40,40,43);
+  background: linear-gradient(180deg, rgba(40,40,43,1) 80%, rgba(2,58,66,1) 100%);
+  opacity: 0.8;
+  */
+    background-image: url("https://media.istockphoto.com/id/1174883947/photo/blank-blackboard.webp?b=1&s=170667a&w=0&k=20&c=MJA7aPwjvsPD2yNQDt_AhvOcPPH7vQxuQ0ZFkNpnrPQ=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Brush Script MT', cursive;/*'Bubblegum Sans';*/
+    font-size: 22px;
+}
+p {
+  color: antiquewhite;
+  font-size: 60px;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Brush Script MT', cursive;
+}
+div{
+  color: antiquewhite;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 30px;
+}
+html, body { 
+    height: 100%; 
+    margin: 0; 
+    font-family: 'Brush Script MT', cursive;
+  }
+h1 { 
+    color:antiquewhite;
+    font-size: 92px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .small-margin{
+    margin-bottom: -60px;
+  }
+  .small-margin2{
+    margin-bottom: 8px;
+  }
+
+
+/* FUNNY BUTTON STUFF */
+
+.button-19 {
+  appearance: button;
+  background-color:#252c17; /*#18d693;*/
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 10%;
+}
+
+.button-19:after {
+  background-clip: padding-box;
+  background-color:#3c3c28; /*#1cf635;*/
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.button-19:main,
+.button-19:focus {
+  user-select: auto;
+}
+
+.button-19:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.button-19:disabled {
+  cursor: auto;
+}
+
+.button-19:active {
+  border-width: 4px 0 0;
+  background: none;
+}
+.button-48 {
+  /* existing styles */
+  position: relative;
+  overflow: hidden;
+}
+
+.button-48 span {
+  /* existing styles */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 20%;
+  opacity: 0;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1);
+}
+
+.button-48:hover span {
+  opacity: 1;
+}
+.button-48 {
+  appearance: none;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson,Helvetica,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  background-color: transparent; /* Added */
+}
+
+.button-48:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.button-48:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button-48 span {
+  z-index: 1;
+  position: relative;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <style>
+        #body {
+            background-image: url("https://media.istockphoto.com/id/1174883947/photo/blank-blackboard.webp?b=1&s=170667a&w=0&k=20&c=MJA7aPwjvsPD2yNQDt_AhvOcPPH7vQxuQ0ZFkNpnrPQ=");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    <script src='itsover.js'></script>
+</head>
+<body>
+    <!--<button id="butConnect">Connect</button> -->
+    <button id="connectButton"  class="button-19" onclick="connect()">Connect</button>
+    <!--<button class="button-19" role="button"></button>-->
+
+    <div class="container">
+        <div>
+            <div id="popup" style="display: none; float: center;">
+              <span style="float:center">
+                <img id="randomGifwin" alt="Random Win GIF" style="left:40%; display: none; display: block; margin-left: auto;margin-right: auto;">
+                <img id="randomGifloss" alt="Random loss GIF" style="float:left;; display: none; display: block; margin-left: auto;margin-right: auto;">
+               
+
+              </span>  
+              <p class="small-margin" id="popupMessage"></p>
+              <p class="small-margin" id="popupMessage2"></p>
+              <p class="small-margin" id="popupMessage3"></p>
+              <p class="small-margin"  id="combinedCounts"></p>
+              <p class="small-margin2">Do you want to play again(Y/N)?</p>
+              <!-- <p id="winsCount"></p><p id="lossesCount"></p> -->
+                <!--  <button id="popup"></button> -->
+
+                <button onclick="reset()">Reset</button>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            <!-- <button class="btn btn-info" onClick="togglePopup()">Toggle Popup</button> -->
+        </div>
+        <h1>Hangman The Game</h1>
+        <div class="float-left">
+            <div id="inverseId" class="text-center">
+                <img id='hangmanPic' src="./images/Error0.png" alt="hangmanPic" style="height: 40%; float: left;">
+                <p>Guess The Word:</p>
+                <p id="wordSpotlight"></p>
+                Wrong Guesses:
+                <span id='mistakes'>0</span>
+                of 7
+                <span id='maxWrong'></span>
+            </div>
+            <div id="keyboard"></div>
+            <button onclick="reset()">Reset</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('combinedCounts').innerHTML = 'Wins: <span id="winsCount"></span>, Losses: <span id="lossesCount"></span>';
+    </script>
+
+</body>
+
+</html>
