@@ -1,4 +1,5 @@
 // Declare variables
+const fs = require('fs');
 let port;
 let reader;
 let inputDone;
@@ -134,7 +135,6 @@ function sendCtrlC() {
 }
 
 // Word bank for the hangman game
-
 var WordBank = [
   "banana",
   "apple",
@@ -241,6 +241,8 @@ var WordBank = [
   "sleep",
   "star",
 ];
+
+
 // Function to generate a random GIF path
 function randomGifwin() {
 
@@ -314,6 +316,8 @@ sendPeriodicMessage("Hello, world!", 2000); // Send "Hello, world!" every 2 seco
 // Function to reset the hangman game
 async function reset() {
   // Event listener for keyboard key press
+  //console.log(WordBank);
+  const WordBank = fs.readFileSync('WordBank.txt', 'utf-8').split('\n');
   clearInterval(sendPeriodicMessage);
   clearInterval(scrollInterval);
   writeToLCD = false; 
